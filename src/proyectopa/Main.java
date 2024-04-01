@@ -8,6 +8,14 @@ class Main{
         int opcion;
         Hospital hospital = new Hospital();
 
+        hospital.agregarEnfermera("Laura Rodriguez", 22);
+        hospital.agregarTurno("Laura Rodriguez", "lunes");
+
+        hospital.agregarEnfermera("Carla Tudela", 23);
+        hospital.agregarTurno("Carla Tudela", "miércoles");
+
+        hospital.agregarEnfermera("Camila Gonzalez", 26);
+        hospital.agregarTurno("Camila Gonzalez", "viernes");
 
         do {
             System.out.println("Ingrese el numero de la opcion deseada:");
@@ -39,6 +47,7 @@ class Main{
                     hospital.eliminarEnfermera(nombreEnfermeraEliminar);
                     break;
                 case 4:
+
                     hospital.mostrarEnfermerasConHorarios();
                     break;
                 case 5:

@@ -2,7 +2,7 @@ package proyectopa;
 import java.util.*;
 
 class Hospital {
-    private List<Enfermera> enfermeras;
+    private final List<Enfermera> enfermeras;
 
     public Hospital() {
         this.enfermeras = new ArrayList<>();
