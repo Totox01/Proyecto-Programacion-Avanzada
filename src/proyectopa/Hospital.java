@@ -15,7 +15,7 @@ class Hospital {
     }
 
     public void buscarDiaConHorarios(String diaBuscado) {
-        System.out.println("Horarios para el día " + diaBuscado + ":");
+        System.out.println("Horarios para el dia " + diaBuscado + ":");
 
         for (Enfermera enfermera : enfermeras) {
             Map<String, String> horario = enfermera.getHorario();
@@ -34,7 +34,7 @@ class Hospital {
         return null;
     }
     private int obtenerIndiceDia(String dia) {
-        String[] diasSemana = { "lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo" };
+        String[] diasSemana = { "lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo" };
         for (int i = 0; i < diasSemana.length; i++) {
             if (diasSemana[i].equalsIgnoreCase(dia)) {
                 return i;
@@ -44,11 +44,11 @@ class Hospital {
     }
 
     private String obtenerDiaPorIndice(int indice) {
-        String[] diasSemana = { "lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo" };
+        String[] diasSemana = { "lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo" };
         if (indice >= 0 && indice < diasSemana.length) {
             return diasSemana[indice];
         }
-        return "Día no válido";
+        return "Dia no válido";
     }
     public void mostrarEnfermerasConHorarios() {
         for (Enfermera enfermera : enfermeras) {
@@ -68,7 +68,7 @@ class Hospital {
     public void agregarTurno(String nombreEnfermera, String diaInicio) {
         Enfermera enfermera = buscarEnfermeraPorNombre(nombreEnfermera);
         if (enfermera != null) {
-            String[] turnos = { "día", "noche", "saliente", "libre" };
+            String[] turnos = { "dia", "noche", "saliente", "libre" };
             int indiceDiaInicio = obtenerIndiceDia(diaInicio);
 
             for (int i = 0; i < 7; i++) {

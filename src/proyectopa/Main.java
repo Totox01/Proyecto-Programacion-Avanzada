@@ -12,7 +12,7 @@ class Main{
         hospital.agregarTurno("Laura Rodriguez", "lunes");
 
         hospital.agregarEnfermera("Carla Tudela", 23);
-        hospital.agregarTurno("Carla Tudela", "miércoles");
+        hospital.agregarTurno("Carla Tudela", "miercoles");
 
         hospital.agregarEnfermera("Camila Gonzalez", 26);
         hospital.agregarTurno("Camila Gonzalez", "viernes");
