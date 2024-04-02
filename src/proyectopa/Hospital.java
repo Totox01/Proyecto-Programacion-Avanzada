@@ -25,6 +25,7 @@ class Hospital {
             }
         }
     }
+
     private Enfermera buscarEnfermeraPorNombre(String nombre) {
         for (Enfermera enfermera : enfermeras) {
             if (enfermera.getNombre().equalsIgnoreCase(nombre)) {
@@ -33,6 +34,7 @@ class Hospital {
         }
         return null;
     }
+
     private int obtenerIndiceDia(String dia) {
         String[] diasSemana = { "lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo" };
         for (int i = 0; i < diasSemana.length; i++) {
@@ -50,6 +52,7 @@ class Hospital {
         }
         return "Dia no válido";
     }
+
     public void mostrarEnfermerasConHorarios() {
         for (Enfermera enfermera : enfermeras) {
             System.out.println("Enfermera: " + enfermera.getNombre() + " (Edad: " + enfermera.getEdad() + ")");
@@ -65,6 +68,7 @@ class Hospital {
             System.out.println();
         }
     }
+
     public void agregarTurno(String nombreEnfermera, String diaInicio) {
         Enfermera enfermera = buscarEnfermeraPorNombre(nombreEnfermera);
         if (enfermera != null) {
@@ -82,6 +86,7 @@ class Hospital {
             System.out.println("Enfermera no encontrada.");
         }
     }
+
     public void eliminarEnfermera(String nombre) {
         Iterator<Enfermera> iter = enfermeras.iterator();
         while (iter.hasNext()) {

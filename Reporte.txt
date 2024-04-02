@@ -1,0 +1,9 @@
+///IGNORAR EN CASO DE NO ESTAR RELACIONADO A LA CALIFICACION DE ESTE PROYECTO///
+
+SIA 1.1 Para este proyecto identificamos los datos necesarios de una enfermera: Su edad (int) y su nombre (string) (con el fin de mantenerlo simple), y sus horarios (String).
+-Las funcionalidades del proyecto son las siguientes: Registrar/Quitar enfermeras del sistema,  Agregar un turno a una enfermera (Falta la posibilidad de quitar turnos), ver la informacion de todas las enfermeras (Sus nombres con sus horarios), ver los turnos de un dia dado.
+
+SIA 1.2 Para este protecto utilizamos 3 clases: la clase Enfermera que se encarga de manejar la informacion personal de cada enfermera, la clase Hospital que se encarga de manejar la informacion de todas las enfermeras, y la clase Main la cual maneja el I/O.
+SIA 1.5 La clase Hospital esta formada por un arrayList que a su vez contiene una lista de horarios para cada enfermera.
+SIA 1.7 La clase Enfermera contiene un mapa para almacenar los horarios de una enfermera y a su vez para que la clase Hospital pueda agregar a una lista de turnos/horarios por dia.
+

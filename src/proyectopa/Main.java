@@ -26,6 +26,7 @@ class Main{
             System.out.println("5. Buscar un dia con sus horarios");
             System.out.println("6. Salir");
             opcion = Integer.parseInt(reader.readLine());
+
             switch (opcion){
                 case 1:
                     System.out.println("Ingrese el nombre de la enfermera:");
@@ -34,6 +35,7 @@ class Main{
                     int edad = Integer.parseInt(reader.readLine());
                     hospital.agregarEnfermera(nombre, edad);
                     break;
+
                 case 2:
                     System.out.println("Ingrese el nombre de la enfermera:");
                     String nombreEnfermera = reader.readLine();
@@ -41,20 +43,23 @@ class Main{
                     String diaInicio = reader.readLine();
                     hospital.agregarTurno(nombreEnfermera, diaInicio);
                     break;
+
                 case 3:
                     System.out.println("Ingrese el nombre de la enfermera a eliminar:");
                     String nombreEnfermeraEliminar = reader.readLine();
                     hospital.eliminarEnfermera(nombreEnfermeraEliminar);
                     break;
-                case 4:
 
+                case 4:
                     hospital.mostrarEnfermerasConHorarios();
                     break;
+
                 case 5:
                     System.out.println("Ingrese el día de la semana a buscar:");
                     String diaBuscado = reader.readLine().toLowerCase();
                     hospital.buscarDiaConHorarios(diaBuscado);
                     break;
+
                 case 6:
                     System.out.println("Saliendo...");
                     break;
