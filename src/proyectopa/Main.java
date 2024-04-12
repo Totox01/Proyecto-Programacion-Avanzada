@@ -1,5 +1,6 @@
 package proyectopa;
-
+import java.util.Map;
+import java.util.HashMap;
 import java.io.*;
 
 class Main{
@@ -8,14 +9,8 @@ class Main{
         int opcion;
         Hospital hospital = new Hospital();
 
-        hospital.agregarEnfermera("Laura Rodriguez", 22);
-        hospital.agregarTurno("Laura Rodriguez", "lunes");
+        CargarArchivo.cargarEnfermerasDesdeArchivo(hospital);
 
-        hospital.agregarEnfermera("Carla Tudela", 23);
-        hospital.agregarTurno("Carla Tudela", "miercoles");
-
-        hospital.agregarEnfermera("Camila Gonzalez", 26);
-        hospital.agregarTurno("Camila Gonzalez", "viernes");
 
         do {
             System.out.println("Ingrese el numero de la opcion deseada:");
@@ -33,9 +28,32 @@ class Main{
                     String nombre = reader.readLine();
                     System.out.println("Ingrese la edad de la enfermera:");
                     int edad = Integer.parseInt(reader.readLine());
-                    hospital.agregarEnfermera(nombre, edad);
-                    break;
 
+                    Map<String, String> horario = new HashMap<>();
+
+                    System.out.println("Ingrese el turno para el día Lunes (Dia/Noche/Libre):");
+                    String turnoLunes = reader.readLine();
+                    horario.put("Lunes", turnoLunes);
+
+                    System.out.println("Ingrese el turno para el día Martes (Dia/Noche/Libre):");
+                    String turnoMartes = reader.readLine();
+                    horario.put("Martes", turnoMartes);
+
+                    System.out.println("Ingrese el turno para el día Miércoles (Dia/Noche/Libre):");
+                    String turnoMiercoles = reader.readLine();
+                    horario.put("Miércoles", turnoMiercoles);
+
+                    System.out.println("Ingrese el turno para el día Jueves (Dia/Noche/Libre):");
+                    String turnoJueves = reader.readLine();
+                    horario.put("Jueves", turnoJueves);
+
+                    System.out.println("Ingrese el turno para el día Viernes (Dia/Noche/Libre):");
+                    String turnoViernes = reader.readLine();
+                    horario.put("Viernes", turnoViernes);
+
+                    hospital.agregarEnfermera(nombre, edad, horario);
+                    CargarArchivo.agregarEnfermeraAArchivo(nombre, edad, horario);
+                    break;
                 case 2:
                     System.out.println("Ingrese el nombre de la enfermera:");
                     String nombreEnfermera = reader.readLine();
@@ -48,6 +66,7 @@ class Main{
                     System.out.println("Ingrese el nombre de la enfermera a eliminar:");
                     String nombreEnfermeraEliminar = reader.readLine();
                     hospital.eliminarEnfermera(nombreEnfermeraEliminar);
+                    CargarArchivo.eliminarEnfermeraDeArchivo(nombreEnfermeraEliminar);
                     break;
 
                 case 4:

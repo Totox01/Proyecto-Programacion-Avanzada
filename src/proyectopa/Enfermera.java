@@ -7,10 +7,10 @@ class Enfermera {
     private int edad;
     private Map<String, String> horario;
 
-    public Enfermera(String nombre, int edad) {
+    public Enfermera(String nombre, int edad, Map<String, String> horario) {
         this.nombre = nombre;
         this.edad = edad;
-        this.horario = new HashMap<>();
+        this.horario = horario;
     }
 
     public int getEdad() {

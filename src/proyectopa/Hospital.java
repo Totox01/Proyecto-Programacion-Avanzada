@@ -8,8 +8,8 @@ class Hospital {
         this.enfermeras = new ArrayList<>();
     }
 
-    public void agregarEnfermera(String nombre, int edad) {
-        Enfermera nuevaEnfermera = new Enfermera(nombre, edad);
+    public void agregarEnfermera(String nombre, int edad, Map<String, String> horario) {
+        Enfermera nuevaEnfermera = new Enfermera(nombre, edad, horario);
         enfermeras.add(nuevaEnfermera);
         System.out.println("Enfermera agregada al sistema: " + nombre);
     }
@@ -22,6 +22,7 @@ class Hospital {
             if (horario.containsKey(diaBuscado)) {
                 String turno = horario.get(diaBuscado);
                 System.out.println("Enfermera: " + enfermera.getNombre() + " - Turno: " + turno);
+                return;
             }
         }
     }
@@ -36,7 +37,7 @@ class Hospital {
     }
 
     private int obtenerIndiceDia(String dia) {
-        String[] diasSemana = { "lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo" };
+        String[] diasSemana = { "lunes", "martes", "miércoles", "jueves", "viernes", "sabado", "domingo" };
         for (int i = 0; i < diasSemana.length; i++) {
             if (diasSemana[i].equalsIgnoreCase(dia)) {
                 return i;
@@ -51,6 +52,8 @@ class Hospital {
             return diasSemana[indice];
         }
         return "Dia no válido";
+
+
     }
 
     public void mostrarEnfermerasConHorarios() {
@@ -86,6 +89,8 @@ class Hospital {
             System.out.println("Enfermera no encontrada.");
         }
     }
+
+
 
     public void eliminarEnfermera(String nombre) {
         Iterator<Enfermera> iter = enfermeras.iterator();

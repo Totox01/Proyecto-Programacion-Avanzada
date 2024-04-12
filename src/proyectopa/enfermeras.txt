@@ -1,0 +1,20 @@
+Laura Rodriguez,22,Lunes:Dia,Martes:Noche,Miércoles:Libre,Jueves:Libre,Viernes:Dia
+Carla Tudela,23,Lunes:Libre,Martes:Noche,Miércoles:Dia,Jueves:Libre,Viernes:Saliente
+Camila Gonzalez,26,Lunes:Libre,Martes:Noche,Miércoles:Dia,Jueves:Libre,Viernes:Dia
+Maria Perez,30,Lunes:Noche,Martes:Noche,Miércoles:Noche,Jueves:Noche,Viernes:Noche
+Juanita Lopez,28,Lunes:Dia,Martes:Noche,Miércoles:Dia,Jueves:Noche,Viernes:Libre
+Ana Martinez,29,Lunes:Libre,Martes:Dia,Miércoles:Libre,Jueves:Dia,Viernes:Libre
+Sofia Fernandez,27,Lunes:Saliente,Martes:Dia,Miércoles:Saliente,Jueves:Dia,Viernes:Saliente
+Josefina Garcia,31,Lunes:Libre,Martes:Dia,Miércoles:Libre,Jueves:Dia,Viernes:Libre
+Elena Jimenez,25,Lunes:Noche,Martes:Noche,Miércoles:Libre,Jueves:Libre,Viernes:Dia
+Luisa Torres,34,Lunes:Dia,Martes:Dia,Miércoles:Dia,Jueves:Dia,Viernes:Dia
+Marcela Ruiz,32,Lunes:Noche,Martes:Noche,Miércoles:Noche,Jueves:Noche,Viernes:Noche
+Isabel Castro,26,Lunes:Libre,Martes:Noche,Miércoles:Dia,Jueves:Libre,Viernes:Noche
+Fernanda Soto,28,Lunes:Dia,Martes:Libre,Miércoles:Dia,Jueves:Libre,Viernes:Dia
+Diana Garcia,26,Lunes:Noche,Martes:Dia,Miércoles:Libre,Jueves:Dia,Viernes:Noche
+Estefania Perez,29,Lunes:Libre,Martes:Libre,Miércoles:Dia,Jueves:Noche,Viernes:Dia
+Claudia Fernandez,27,Lunes:Dia,Martes:Libre,Miércoles:Dia,Jueves:Libre,Viernes:Dia
+Alejandra Ramirez,31,Lunes:Libre,Martes:Dia,Miércoles:Noche,Jueves:Dia,Viernes:Libre
+Patricia Garcia,33,Lunes:Noche,Martes:Noche,Miércoles:Noche,Jueves:Libre,Viernes:Noche
+Ana Maria Lopez,28,Lunes:Libre,Martes:Dia,Miércoles:Libre,Jueves:Dia,Viernes:Libre
+Karla Fernandez,30,Lunes:Noche,Martes:Libre,Miércoles:Noche,Jueves:Libre,Viernes:Dia
